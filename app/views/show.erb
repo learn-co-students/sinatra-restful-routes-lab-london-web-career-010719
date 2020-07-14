@@ -1,0 +1,28 @@
+<h1> Yummy! 🍕</h1>
+
+<p>
+<%= @recipes.name %>
+</p>
+<br>
+<p>
+  The ingredients required for this recipe are:
+  <%= @recipes.ingredients %>
+</p>
+<br>
+<p>
+  Placed in the oven at 10 million degrees for:
+  <%= @recipes.cook_time %> minutes
+</p>
+
+<button>
+<a href="/recipes/<%= @recipes.id %>/edit"> Edit me </a>
+</button>
+
+<form action="/recipes/<%= @recipes.id %>/delete" method="post">
+  <input type="hidden" name="_method" value="delete" />
+  <input id="delete" type="submit" value="Delete Recipe" />
+</form>
+
+<br>
+
+<a href="/recipes"> Go back to see all the Recipes </a>

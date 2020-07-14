@@ -1,0 +1,19 @@
+<h1>Create a new recipe!</h1>
+
+<a href="/recipes">Go back</a>
+
+<form action="/recipes" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="recipe[name]" />
+  </div>
+  <div>
+    <label for="ingredients">Ingredients:</label>
+    <input id="ingredients" type="text" name="recipe[ingredients]" />
+  </div>
+  <div>
+    <label for="cook_time">Cook time:</label>
+    <input id="cook_time" type="text" name="recipe[cook_time]" />
+  </div>
+  <input type="submit" value="Create new Recipe" />
+</form>
