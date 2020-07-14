@@ -1,0 +1,16 @@
+<h1>Index of all Recipes</h1>
+
+<%@recipes.each do |recipe|%>
+<h1><%= recipe.name %></h1>
+<%= recipe.ingredients %>
+<br>
+<%= recipe.cook_time %>
+<br>
+<%= recipe.id %>
+<br>
+<a href="/recipes/<%=recipe.id%>">link here</a>/
+<% end %>
+
+  <p>I'm creating a link to
+  <a href="/recipes/8">the Mozilla homepage</a>.
+  </p>
